@@ -3,6 +3,9 @@
 
 ------------------------------------------------------------------------
 
+--------------------------------------------------------------------------------
+
+
 Antarynan is collection of all machine learning algorithms implimented in all well know libraries:
 
 - [PyTorch](https://github.com/pytorch/pytorch.git) 
