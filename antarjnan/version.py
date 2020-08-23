@@ -3,7 +3,6 @@ version=(0,1,0)
 #major.minor.minute
 
 def set_get_version():
-    print("%d.%d.%d" % version)
     return "%d.%d.%d" % version
 
     
