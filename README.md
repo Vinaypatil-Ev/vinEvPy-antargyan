@@ -1,5 +1,5 @@
 # Antargyan
-<p align="center"><img src="https://raw.github.com/Vinaypatil-Ev/vinEvPy-antarjnan/blob/master/docs/img/antargyan.png" alt="cover"></p>
+<p align="center"><img src="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan/blob/master/docs/img/antargyan.png" alt="cover"></p>
 
 --------------------------------------------------------------------------------
 
