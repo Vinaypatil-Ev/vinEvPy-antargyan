@@ -1,1 +1,1 @@
-from antargyan.algos.pytorch.linear_regression import LinearRegrssion
+from antargyan.algos.pytorch.linear_regression import LinearRegression

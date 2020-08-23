@@ -1,10 +1,10 @@
 import torch
-from antargyan.util.tensor import return_torch_tensor
+from antargyan.utils import return_torch_tensor
 
-class LinearRegreesion:
+class LinearRegression:
     def __init__(x,y):
-        self.x=return_torch_tensor(x)
-        self.y=return_torch_tensor(y)
+        self.x=tensor.return_torch_tensor(x)
+        self.y=tensor.return_torch_tensor(y)
         
     def cal_x(self):
         ones=torch.ones(self.x.size(0))

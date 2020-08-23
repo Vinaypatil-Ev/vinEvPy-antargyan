@@ -1,1 +1,1 @@
-from . import data_format as tensor
+from antargyan.util.data_format import return_torch_tensor,return_tf_tensor
