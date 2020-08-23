@@ -16,5 +16,8 @@ git clone https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
 cd vinEvPy-antarjnan
 ```
 
-intall the library using :
-pip install git+
+###intall the Antargyan :
+```bash
+#using git source
+pip install git+https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
+```
