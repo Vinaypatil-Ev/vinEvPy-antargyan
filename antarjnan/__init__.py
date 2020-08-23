@@ -1,0 +1,1 @@
+from antarjnan.algos.pytorch.linear_regression import LinearRegrssion
