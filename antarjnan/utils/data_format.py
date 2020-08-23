@@ -16,10 +16,21 @@ def torch_to_tf(x):
     pass
     
 def return_torch_tensor(ten):
-    if is_torch_tensor(ten):
-        return ten
+    if isinstance(ten,list):
+        return torch.tensor(ten)
     elif is_tf_tensor(ten):
         return tf_to_torch(ten)
-    else is_nparray(ten):
+    elif is_nparray(ten):
         return torch.from_numpy(ten)
-    
+    else:
+        return ten
+
+def return_tf_tensor(ten):
+    if isinstance(ten,list):
+        pass
+    elif is_torch_tensor(ten):
+        return torch_to_tf(ten)
+    elif is_nparray(ten):
+        return torch.from_numpy(ten)
+    else:
+        return ten
