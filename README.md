@@ -14,7 +14,7 @@ Antarynan is collection of all machine learning algorithms implimented in all we
 
 ```bash
 #clone the replository
-git clone https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
+$ git clone https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
 #move to directory
 cd vinEvPy-antarjnan
 ```
@@ -23,7 +23,7 @@ cd vinEvPy-antarjnan
 
 ```bash
 #using git source
-pip install git+https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
+$ pip install git+https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
 ```
 
 ## License
