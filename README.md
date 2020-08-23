@@ -22,3 +22,7 @@ cd vinEvPy-antarjnan
 #using git source
 pip install git+https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
 ```
+
+## License
+
+Antargyan is MIT-style licensed, as found in the [LICENSE](LICENSE) file.
