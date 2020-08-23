@@ -21,12 +21,9 @@ setup(
     long_description=long_description,
     url="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git",
     install_requires=[
-        'matplotlib==3.3.1',
         'numpy',
-        'pandas',
         'tensorflow>=1.10.0,<2.0',
-        'torch==1.5.0',
-        'tqdm'
+        'torch>=1.5.0',
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
