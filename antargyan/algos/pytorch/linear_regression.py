@@ -1,5 +1,5 @@
 import torch
-from antarjnan.util.tensor import return_torch_tensor
+from antargyan.util.tensor import return_torch_tensor
 
 class LinearRegreesion:
     def __init__(x,y):
