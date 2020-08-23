@@ -9,7 +9,7 @@ Antarynan is collection of all machine learning algorithms implimented in all we
 - [Numpy](https://github.com/numpy/numpy.git)
 
 
-#### clone the repository
+### clone the repository
 ```bash
 #clone the replository
 git clone https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
@@ -17,7 +17,7 @@ git clone https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
 cd vinEvPy-antarjnan
 ```
 
-### intall the Antargyan :
+### Intall the Antargyan :
 ```bash
 #using git source
 pip install git+https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
