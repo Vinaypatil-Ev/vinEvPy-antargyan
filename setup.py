@@ -14,7 +14,7 @@ with open(join("antargyan","version.py")) as set_version:
     exec(set_version.read())
 
 setup(
-    name="antarjyan",
+    name="antargyan",
     auther="vinay patil",
     auther_email="mailforguglecolabco.in@gmail.com",
     version=__version__,
@@ -24,7 +24,6 @@ setup(
         'matplotlib==3.3.1',
         'numpy',
         'pandas',
-        'seaborn==0.8.1',
         'tensorflow>=1.10.0,<2.0',
         'torch==1.5.0',
         'tqdm'
