@@ -1,9 +1,10 @@
 # Antargyan
-<p align="center"><img src="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan/blob/master/docs/img/antargyan2.png" alt="cover"></p>
+<p align="center">
+<img src="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan/blob/master/docs/img/antargyan2.png" alt="antargyan"></p>
 
 --------------------------------------------------------------------------------
 
-Antarynan is collection of all machine learning algorithms implimented in all well know libraries:
+Antarynan is collection of all machine learning algorithms implemented in all well know libraries:
 
 - [PyTorch](https://github.com/pytorch/pytorch.git) 
 - [Tensorflow](https://github.com/tensorflow/tensorflow.git) 
