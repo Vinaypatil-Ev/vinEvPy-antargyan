@@ -19,21 +19,19 @@ setup(
     auther_email="mailforguglecolabco.in@gmail.com",
     version=__version__,
     long_description=long_description,
-    url="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git",
+    url="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan",
     install_requires=[
         'numpy',
-        'tensorflow>=1.10.0,<2.0',
         'torch>=1.5.0',
     ],
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Window tested",
         "Topic :: Scientific/Engineering",
         "Topic :: Scientific/Engineering :: Mathematics",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
     license='MIT',
-    keywords='vinaypatil-ev vinevpy antarjnan machine learning'
+    keywords='antargyan vinaypatil-ev vinevpy machine learning tensorflow pytorch numpy algorithms machinelearnig '
     
 )
