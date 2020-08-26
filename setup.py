@@ -2,16 +2,19 @@ from setuptools import setup
 from os.path import join
 import sys
 
+
 if sys.version_info < (3,):
     print("Python 2 is not supported.\n please try with python>=3.6 ")
     sys.exit(-1)
-    
-with open("README.md","r") as readme:
+
+
+with open("README.md", "r") as readme:
     long_description=readme.read()
-    
-    
-with open(join("antargyan","version.py")) as set_version:
+
+
+with open(join("antargyan", "version.py")) as set_version:
     exec(set_version.read())
+
 
 setup(
     name="antargyan",
@@ -32,6 +35,5 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
     license='MIT',
-    keywords='antargyan vinaypatil-ev vinevpy machine learning tensorflow pytorch numpy algorithms machinelearnig '
-    
+    keywords='antargyan vinaypatil-ev vinevpy machine learning tensorflow pytorch numpy algorithms machinelearnig ' 
 )
