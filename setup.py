@@ -32,7 +32,9 @@ setup(
         'numpy',
         'torch>=1.5.0',
     ],
-    packages=find_namespace_packages("antargyan"),
+    packages=find_namespace_packages(
+        where=['antargyan', 'antargyan.*']
+    ),
     include_package_data=True,
     python_requires='>=3.6.1',
     classifiers=[
