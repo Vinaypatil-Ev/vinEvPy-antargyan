@@ -18,12 +18,16 @@ with open(join("antargyan", "version.py")) as set_version:
 
 setup(
     name="antargyan",
-    auther="vinay patil",
-    auther_email="mailforguglecolabco.in@gmail.com",
     version=__version__,
+    author="vinay patil",
+    author_email="mailforguglecolabco.in@gmail.com",
+    description="All ml/dl algorithms implemnted in numpy/tensorflow/pytorch",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan",
+    project_urls={
+        'Source Code': 'https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan',
+        },
     python_requires='>=3.6.1',
     install_requires=[
         'numpy',
@@ -33,7 +37,11 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         "License :: OSI Approved :: MIT License",
+        'Framework :: antargyan',
+        'Intended Audience :: Science/Research/students',
+        'Intended Audience :: Education',
         "Topic :: Scientific/Engineering",
+        "Topic :: Scientific/Engineering :: machine learning",
         "Topic :: Scientific/Engineering :: Mathematics",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
