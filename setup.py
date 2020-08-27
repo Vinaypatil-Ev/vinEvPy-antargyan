@@ -32,7 +32,8 @@ setup(
         'numpy',
         'torch>=1.5.0',
     ],
-    packages=find_packages(),
+    packages=find_packages(where=["anatrgyn","antargyan.*"]),
+    include_package_data=True,
     python_requires='>=3.6.1',
     classifiers=[
         'Programming Language :: Python :: 3.6',
