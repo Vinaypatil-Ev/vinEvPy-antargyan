@@ -1,4 +1,4 @@
-from setuptools import setup,find_packages
+from setuptools import setup,find_packages,find_namespace_packages
 from os.path import join
 import sys
 
@@ -32,7 +32,7 @@ setup(
         'numpy',
         'torch>=1.5.0',
     ],
-    packages=find_packages(where=["anatrgyn","antargyan.*"]),
+    packages=find_namespace_packages(where="anatrgyn",include=("antargyan*")),
     include_package_data=True,
     python_requires='>=3.6.1',
     classifiers=[
