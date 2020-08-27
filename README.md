@@ -3,10 +3,6 @@
 <img src="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan/blob/master/docs/img/antargyan2.png" alt="antargyan"></p>
 
 
-|PyPi|_
-|PyPi|_ |Downloads|_ |NUMFocus|_
-
-
 .. image:: https://matplotlib.org/_static/logo2.svg
 
 
