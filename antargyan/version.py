@@ -1,4 +1,4 @@
-version = (0, 1, dev1)
+version = (0, 1, "dev6")
 
 # version system
 # major.minor.minute
