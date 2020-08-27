@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup,find_packages,find_namespace_packages
 from os.path import join
 import sys
 
@@ -28,11 +28,12 @@ setup(
     project_urls={
         'Source Code': 'https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan',
         },
-    python_requires='>=3.6.1',
     install_requires=[
         'numpy',
         'torch>=1.5.0',
     ],
+    packages=find_namespace_packages(include=["antargyan.*"])
+    python_requires='>=3.6.1',
     classifiers=[
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
