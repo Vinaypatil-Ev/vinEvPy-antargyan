@@ -2,6 +2,8 @@
 <p align="center">
 <img src="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan/blob/master/docs/img/antargyan2.png" alt="antargyan"></p>
 
+|PyPi|_
+
 --------------------------------------------------------------------------------
 
 Antarynan is collection of all machine learning algorithms implemented in all well know libraries:
