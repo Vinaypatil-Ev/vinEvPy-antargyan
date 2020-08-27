@@ -1,10 +1,6 @@
 # Antargyan
-<p align="center">
-<img src="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan/blob/master/docs/img/antargyan2.png" alt="antargyan"></p>
-
-
-.. image:: https://matplotlib.org/_static/logo2.svg
-
+<div style="  display: block; margin-left: auto; margin-right: auto">
+<img src="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan/blob/master/docs/img/antargyan2.png" alt="antargyan"></div>
 
 --------------------------------------------------------------------------------
 
