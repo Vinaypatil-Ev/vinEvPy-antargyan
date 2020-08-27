@@ -8,7 +8,7 @@ if sys.version_info < (3,):
     sys.exit(-1)
 
 
-with open("README.md", "r") as readme:
+with open("README.md", "r", encoding="utf-8") as readme:
     long_description=readme.read()
 
 
@@ -22,13 +22,16 @@ setup(
     auther_email="mailforguglecolabco.in@gmail.com",
     version=__version__,
     long_description=long_description,
+    long_description_content_type="text/markdown",
     url="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan",
+    python_requires='>=3.6.1',
     install_requires=[
         'numpy',
         'torch>=1.5.0',
     ],
     classifiers=[
-        "Programming Language :: Python :: 3",
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
         "License :: OSI Approved :: MIT License",
         "Topic :: Scientific/Engineering",
         "Topic :: Scientific/Engineering :: Mathematics",
