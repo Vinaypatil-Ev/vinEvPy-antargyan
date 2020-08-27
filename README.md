@@ -1,5 +1,5 @@
 # Antargyan
-<div style="margin: auto">
+<div align="center">
 <img src="https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan/blob/master/docs/img/antargyan2.png" alt="antargyan"></div>
 
 --------------------------------------------------------------------------------
