@@ -1,4 +1,4 @@
-from setuptools import setup,find_packages,find_namespace_packages
+from setuptools import setup, find_namespace_packages
 from os.path import join
 import sys
 
@@ -9,7 +9,7 @@ if sys.version_info < (3,):
 
 
 with open("README.md", "r", encoding="utf-8") as readme:
-    long_description=readme.read()
+    long_description = readme.read()
 
 
 with open(join("antargyan", "version.py")) as set_version:
@@ -27,12 +27,12 @@ setup(
     url="https://github.com/Vinaypatil-Ev/vinEvPy-antargyan",
     project_urls={
         'Source Code': 'https://github.com/Vinaypatil-Ev/vinEvPy-antargyan',
-        },
+    },
     install_requires=[
         'numpy',
         'torch>=1.5.0',
     ],
-    packages=find_namespace_packages(include=["antargyan","antargyan.*"]),
+    packages=find_namespace_packages(include=["antargyan", "antargyan.*"]),
     include_package_data=True,
     python_requires='>=3.6.1',
     classifiers=[
@@ -46,5 +46,6 @@ setup(
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
     ],
     license='MIT',
-    keywords='antargyan vinaypatil-ev vinevpy machine learning tensorflow pytorch numpy algorithms machinelearnig ' 
+    keywords='antargyan vinaypatil-ev vinevpy machine learning tensorflow \
+    pytorch numpy algorithms machinelearnig'
 )

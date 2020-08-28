@@ -3,8 +3,8 @@ from antargyan.utils import return_torch_tensor
 
 
 class LinearRegression:
-    def __init__(self, x, y,dtype=torch.float32):
-        self.dtype=dtype
+    def __init__(self, x, y, dtype=torch.float32):
+        self.dtype = dtype
         self.x = return_torch_tensor(x, self.dtype)
         self.y = return_torch_tensor(y, self.dtype)
 

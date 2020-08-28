@@ -23,7 +23,7 @@ def torch_to_tf(x):
     pass
 
 
-def return_torch_tensor(ten,dtype):
+def return_torch_tensor(ten, dtype):
     if isinstance(ten, list):
         return torch.tensor(ten, dtype=dtype)
     elif is_tf_tensor(ten):
@@ -34,7 +34,7 @@ def return_torch_tensor(ten,dtype):
         return ten
 
 
-def return_tf_tensor(ten):
+def return_tf_tensor(ten, dtype):
     if isinstance(ten, list):
         pass
     elif is_torch_tensor(ten):
