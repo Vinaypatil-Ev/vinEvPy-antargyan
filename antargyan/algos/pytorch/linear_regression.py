@@ -20,11 +20,12 @@ class LinearRegression:
         return theta
 
     def fit(self):
-        self.X = self.cal_X(self.x)
+        self.X = self.cal_x(self.x)
         self.theta = self.cal_theta()
 
     def predict(self, x):
         x = self.return_torch_tensor(x, self.dtype)
-        X = self.cal_X(x)
+        X = self.cal_x(x)
         prediction = X.mm(self.theta)
         return prediction
+
