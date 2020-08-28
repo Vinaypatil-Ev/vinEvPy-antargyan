@@ -7,9 +7,9 @@ class LinearRegression:
         self.x = return_torch_tensor(x)
         self.y = return_torch_tensor(y)
 
-    def cal_x(self):
+    def cal_x(self, X):
         ones = torch.ones(self.x.size(0))
-        x = torch.cat((ones, self.x), axis=1)
+        x = torch.cat((ones, X), axis=1)
         return x
 
     def cal_theta(self):
@@ -24,7 +24,7 @@ class LinearRegression:
         self.theta = self.cal_theta()
 
     def train_predictions(self):
-        pred=self.X.mm(self.theta)
+        pred = self.X.mm(self.theta)
         return pred
 
     def predict(self, x):
@@ -32,4 +32,3 @@ class LinearRegression:
         X = self.cal_x(x)
         prediction = X.mm(self.theta)
         return prediction
-
