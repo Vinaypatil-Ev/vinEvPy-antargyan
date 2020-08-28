@@ -18,7 +18,7 @@ with open(join("antargyan", "version.py")) as set_version:
 
 setup(
     name="antargyan",
-    version=__version__,
+    version="0.1.10",
     author="vinay patil",
     author_email="mailforguglecolabco.in@gmail.com",
     description="All ml/dl algorithms implemnted in numpy/tensorflow/pytorch",
@@ -32,9 +32,7 @@ setup(
         'numpy',
         'torch>=1.5.0',
     ],
-    packages=find_namespace_packages(
-        where=['antargyan', 'antargyan.*']
-    ),
+    packages=find_namespace_packages(include=["antargyan","antargyan.*"]),
     include_package_data=True,
     python_requires='>=3.6.1',
     classifiers=[
