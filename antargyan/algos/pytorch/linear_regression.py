@@ -23,6 +23,10 @@ class LinearRegression:
         self.X = self.cal_x(self.x)
         self.theta = self.cal_theta()
 
+    def train_predictions(self):
+        pred=self.X.mm(self.theta)
+        return pred
+
     def predict(self, x):
         x = self.return_torch_tensor(x, self.dtype)
         X = self.cal_x(x)

@@ -15,16 +15,28 @@ Antarynan is collection of all machine learning algorithms implemented in all we
 
 ```bash
 #clone the replository
-$ git clone https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
+$ git clone https://github.com/Vinaypatil-Ev/vinEvPy-antargyan.git
 #move to directory
-cd vinEvPy-antarjnan
+cd vinEvPy-antargyan
 ```
 
 ### Intall the Antargyan :
 
 ```bash
 #using git source
-$ pip install git+https://github.com/Vinaypatil-Ev/vinEvPy-antarjnan.git
+$ pip install git+https://github.com/Vinaypatil-Ev/vinEvPy-antargyan.git
+
+#using pip
+$ pip install antargyan
+
+```
+### How to use
+```bash
+import antargyan as gyan
+r=gyan.LinearRegeression(X,y)
+r.fit()
+print(r.train_predictions())
+
 ```
 
 ## License
