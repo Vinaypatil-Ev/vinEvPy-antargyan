@@ -23,13 +23,13 @@ def torch_to_tf(x):
     pass
 
 
-def return_torch_tensor(ten):
+def return_torch_tensor(ten,dtype):
     if isinstance(ten, list):
-        return torch.tensor(ten)
+        return torch.tensor(ten, dtype=dtype)
     elif is_tf_tensor(ten):
         return tf_to_torch(ten)
     elif is_nparray(ten):
-        return torch.from_numpy(ten)
+        return torch.from_numpy(ten, dtype=dtype)
     else:
         return ten
 
@@ -40,6 +40,6 @@ def return_tf_tensor(ten):
     elif is_torch_tensor(ten):
         return torch_to_tf(ten)
     elif is_nparray(ten):
-        return torch.from_numpy(ten)
+        pass
     else:
         return ten

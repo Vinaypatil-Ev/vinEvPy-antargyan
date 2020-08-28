@@ -3,9 +3,9 @@ from antargyan.utils import return_torch_tensor
 
 
 class LinearRegression:
-    def __init__(self, x, y):
-        self.x = return_torch_tensor(x)
-        self.y = return_torch_tensor(y)
+    def __init__(self, x, y,dtype=torch.float32):
+        self.x = return_torch_tensor(x,dtype)
+        self.y = return_torch_tensor(y,dtype)
 
     def cal_x(self, X):
         ones = torch.ones(self.x.size(0))
