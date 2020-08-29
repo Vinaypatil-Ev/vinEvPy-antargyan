@@ -10,6 +10,7 @@ class LinearRegression:
     l.fit()
     print(l.train_predictions())
     l.predict([X[1]])
+    
     """
     def __init__(self, x, y, dtype=torch.float32):
         self.dtype = dtype
