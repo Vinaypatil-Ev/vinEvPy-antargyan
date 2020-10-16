@@ -25,11 +25,17 @@ def torch_to_tf(x):
 
 def return_torch_tensor(ten, dtype):
     if isinstance(ten, list):
-        return torch.tensor(ten, dtype=dtype)
+        tensor = torch.tensor(ten, dtype=dtype)
+        if tensor.dim() == 1:
+            tensor = tensor.view(-1,1)
+        return tensor
     elif is_tf_tensor(ten):
         return tf_to_torch(ten)
     elif is_nparray(ten):
-        return torch.from_numpy(ten, dtype=dtype)
+        tensor = torch.from_numpy(ten, dtype=dtype)
+        if tensor.dim() == 1:
+            tensor = tensor.view(-1,1)
+        return tensor
     else:
         return ten
 
