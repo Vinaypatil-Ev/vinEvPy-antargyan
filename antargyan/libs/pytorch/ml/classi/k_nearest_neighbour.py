@@ -1,7 +1,8 @@
 from ..utils.data_format import return_torch_tensor
+form ..utils.data_split import train_test_split
 
 class KNNClassi:
-  def __init__(self, X, y, k=1):
+  def __init__(self, X, y, k=3):
     self.k = k
     self.X = return_torch_tensor(X)
     self.y = return_torch_tensor(y)
@@ -38,8 +39,20 @@ class KNNClassi:
         pred_classes = torch.cat((pred_classes,pred_class))
     return pred_classes
 
-if __name__ == "__main__":  
-  knn = KNNClassi()
+if __name__ == "__main__":
+  x=data[(list(data))[1:-1]]
+  y=data[(list(data))[-1:]] 
+  x=pd.get_dummies(x)
+  # x = x.to_numpy()
+  # y = y.to_numpy()
+  x.drop(list(x)[-1],axis=1,inplace=True)
+  X = torch.tensor(x.to_numpy(), dtype=torch.float64)
+  y = torch.tensor(y.to_numpy(), dtype=torch.float64)
+  xtrn, xtst, ytrn, ytst = train_test_split(X, y, 0.8)
+  print("xtrn, xtst, ytrn, ytst :", xtrn, xtst, ytrn, ytst)
+  knn = KNNClassi(xtrn, xtst, k=3)
+  pred = knn.predict(ytrn)
+  print(pred)
     
 
 
