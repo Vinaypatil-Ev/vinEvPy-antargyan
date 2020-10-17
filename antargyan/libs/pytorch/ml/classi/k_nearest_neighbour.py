@@ -1,6 +1,6 @@
 import torch
-from ..utils.data_format import return_torch_tensor
-from ..utils.data_split import train_test_split
+from ..utils import return_torch_tensor
+from ..utils import train_test_split
 
 class KNNClassi:
   def __init__(self, X, y, k=3):

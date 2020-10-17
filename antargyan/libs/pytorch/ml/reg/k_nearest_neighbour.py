@@ -1,4 +1,4 @@
-from ..utils.data_format import return_torch_tensor
+from ..utils import return_torch_tensor
 
 class KNNReg:
   def __init__(self, X, y, k=1):

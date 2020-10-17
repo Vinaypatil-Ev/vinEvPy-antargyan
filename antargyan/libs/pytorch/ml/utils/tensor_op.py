@@ -1,3 +1,6 @@
+import torch
+
+
 def sort_tensor(X, dim=-1):
     ten, ind = torch.sort(X, dim=dim)
     if X.dim() == 1:
