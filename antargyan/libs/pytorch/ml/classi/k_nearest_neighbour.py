@@ -1,6 +1,6 @@
 from ..utils.data_format import return_torch_tensor
 
-class KNNReg:
+class KNNClassi:
   def __init__(self, X, y, k=1):
     self.k = k
     self.X = return_torch_tensor(X)
@@ -38,7 +38,8 @@ class KNNReg:
         pred_classes = torch.cat((pred_classes,pred_class))
     return pred_classes
 
-if __name__ == "__main__":
+if __name__ == "__main__":  
+  knn = KNNClassi()
     
 
 
