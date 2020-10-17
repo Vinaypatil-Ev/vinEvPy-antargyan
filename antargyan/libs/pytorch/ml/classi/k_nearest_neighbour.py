@@ -1,5 +1,6 @@
+import torch
 from ..utils.data_format import return_torch_tensor
-form ..utils.data_split import train_test_split
+from ..utils.data_split import train_test_split
 
 class KNNClassi:
   def __init__(self, X, y, k=3):
@@ -18,6 +19,7 @@ class KNNClassi:
     pass
 
   def predict(self, X):
+    X = return_torch_tensor(X)
     iter = 0
     for x_0 in X:
       distances = self._euclidian_distance(x_0)
