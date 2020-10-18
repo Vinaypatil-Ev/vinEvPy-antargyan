@@ -18,7 +18,7 @@ class LinearRegression:
         self.y = return_torch_tensor(y, self.dtype)
 
     def cal_x(self, X):
-        ones = torch.ones(X.size(0)).view(-1,1)
+        ones = torch.ones(X.size(0)).view(-1, 1)
         x = torch.cat((ones, X), dim=1)
         return x
 
@@ -45,10 +45,10 @@ class LinearRegression:
 
 
 if __name__ == "__main__":
-    X=[2,4,5,6,7]
-    y=[33,44,66,77,99]
-    l=LinearRegression(X,y)
-    l.fit()
-    print(l.train_predictions())
-    print(l.predict([X[1]]))
-    print("error:", l.y - l.train_predictions())
+    X = [2, 4, 5, 6, 7]
+    y = [33, 44, 66, 77, 99]
+    lg = LinearRegression(X, y)
+    lg.fit()
+    print(lg.train_predictions())
+    print(lg.predict([X[1]]))
+    print("error:", lg.y - lg.train_predictions())
