@@ -1,5 +1,5 @@
 import torch
-from antargyan.utils import return_torch_tensor
+from ..utils import return_torch_tensor
 
 
 class LinearRegression:
